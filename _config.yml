@@ -81,7 +81,7 @@ analytics:
 # Site Author
 author:
   name             : "Shuguang Chen"
-  avatar           : "images/sgchen.png"
+  avatar           : profile.png
   bio              : "CS Ph.D. Student at UH"
   location         : "Houston, TX"
   employer         :
