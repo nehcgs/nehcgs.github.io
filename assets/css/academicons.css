@@ -4,6 +4,8 @@
  *  Square icons designed to be used alongside Font Awesome square icons - https://fortawesome.github.io/Font-Awesome/
  *  Licenses - Font: SIL OFL 1.1, CSS: MIT License
  */
+
+ 
 @font-face {
     font-family: 'Academicons';
     src:url('../fonts/academicons.eot?v=1.8.0');
@@ -324,4 +326,9 @@
 }
 .fa.fa-pull-right {
   margin-left: .3em;
+}
+
+a:any-link {
+  text-decoration: none;
+  cursor: auto;
 }

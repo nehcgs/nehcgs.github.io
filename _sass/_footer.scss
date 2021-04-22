@@ -49,6 +49,11 @@
   }
 }
 
+a:any-link {
+  text-decoration: none;
+  cursor: auto;
+}
+
 .page__footer-copyright {
   font-family: $global-font-family;
   font-size: $type-size-7;

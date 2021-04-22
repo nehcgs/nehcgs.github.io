@@ -58,6 +58,11 @@
     }
   }
 
+a:any-link {
+  text-decoration: none;
+  cursor: auto;
+}
+
   /* light outline */
 
   &--light-outline {

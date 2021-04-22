@@ -36,3 +36,8 @@ td {
 tr, td, th {
   vertical-align: middle;
 }
+
+a:any-link {
+  text-decoration: none;
+  cursor: auto;
+}

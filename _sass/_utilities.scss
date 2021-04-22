@@ -450,6 +450,11 @@ body:hover .visually-hidden button {
   }
 }
 
+a:any-link {
+  text-decoration: None;
+  cursor: auto;
+}
+
 a.reversefootnote {
   color: $gray;
   text-decoration: none;

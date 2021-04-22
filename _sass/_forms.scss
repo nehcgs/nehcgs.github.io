@@ -55,6 +55,11 @@ textarea {
   font-family: $sans-serif;
 }
 
+a:any-link {
+  text-decoration: none;
+  cursor: auto;
+}
+
 label {
   display: block;
   margin-bottom: 0.25em;

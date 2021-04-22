@@ -14,3 +14,9 @@
 .container .content {
     display: none;
     padding : 5px;
+}
+
+a:any-link {
+    text-decoration: none;
+    cursor: auto;
+}

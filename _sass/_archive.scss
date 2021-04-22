@@ -15,6 +15,8 @@
   }
 
   a {
+    text-decoration: none;
+
     &:hover {
       text-decoration:none;
 
@@ -22,7 +24,22 @@
         box-shadow: 0 0 10px rgba(#000, 0.25);
       }
     }
+
+    &:any-link{
+      text-decoration: none;
+      cursor: auto;
+    }
   }
+
+  a:any-link {
+    text-decoration: none;
+    cursor: auto;
+  }
+}
+
+a:any-link {
+  text-decoration: None;
+  cursor: auto;
 }
 
 .archive__subtitle {
@@ -35,6 +52,10 @@
   + .list__item .archive__item-title {
     margin-top: 0.5em;
   }
+  &:any-link{
+    text-decoration: none;
+    cursor: auto;
+  }
 }
 
 .archive__item-title {
@@ -44,6 +65,10 @@
   a + a {
     opacity: 0.5;
   }
+  &:any-link{
+    text-decoration: none;
+    cursor: auto;
+  }
 }
 
 /* remove border*/
@@ -52,6 +77,11 @@
   .archive__item-title {
     margin-top: 1em;
     border-bottom: none;
+
+    &:any-link{
+      text-decoration: none;
+      cursor: auto;
+    }
   }
 }
 
@@ -81,6 +111,11 @@
       text-decoration: none;
   }
 
+}
+
+a:any-link {
+  text-decoration: None;
+  cursor: auto;
 }
 
 
