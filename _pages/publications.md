@@ -13,7 +13,7 @@ author_profile: true
 
 2021
 
-  * [Mitigating Temporal-Drift: A Simple Approach to Keep NER Models Crisp](https://arxiv.org/abs/2104.09742) <br/> **Shuguang Chen**, Leonardo Neves, Thamar Solorio. <br/> [SocialNLP](https://sites.google.com/site/socialnlp2021/) at [NAACL 2021](https://2021.naacl.org)
+  * [Mitigating Temporal-Drift: A Simple Approach to Keep NER Models Crisp](https://arxiv.org/abs/2104.09742) <br/> **Shuguang Chen**, Leonardo Neves, Thamar Solorio. <br/> [SocialNLP](https://sites.google.com/site/socialnlp2021/) at [NAACL 2021](https://2021.naacl.org) <br/> [\[paper\]](https://arxiv.org/abs/2104.09742) [\[code\]](https://github.com/RiTUAL-UH/trending_NER)
 
 
 2020
