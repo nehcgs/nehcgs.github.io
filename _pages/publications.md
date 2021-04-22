@@ -11,6 +11,11 @@ author_profile: true
 
 {% include base_path %}
 
+2021
+
+  * [Mitigating Temporal-Drift: A Simple Approach to Keep NER Models Crisp](https://arxiv.org/abs/2104.09742) <br/> **Shuguang Chen**, Leonardo Neves, Thamar Solorio. <br/> SocialNLP at NAACL 2021
+
+
 2020
 
-  * [A Caption Is Worth A Thousand Images: Investigating Image Captions for Multimodal Named Entity Recognition](https://arxiv.org/abs/2010.12712)<br/>**Shuguang Chen**, Gustavo Aguilar, Leonardo Neves, Thamar Solorio.<br/>arXiv preprint, 2020.
+  * [A Caption Is Worth A Thousand Images: Investigating Image Captions for Multimodal Named Entity Recognition](https://arxiv.org/abs/2010.12712)<br/>**Shuguang Chen**, Gustavo Aguilar, Leonardo Neves, Thamar Solorio.<br/> arXiv preprint, 2020.
