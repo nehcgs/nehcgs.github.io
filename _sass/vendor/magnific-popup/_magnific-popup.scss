@@ -281,7 +281,7 @@ button {
   position: absolute;
   right: 0;
   top: 0;
-  text-decoration: none;
+  text-decoration: none !important; 
   text-align: center;
   opacity: $mfp-controls-opacity;
   @if $mfp-IE7support {

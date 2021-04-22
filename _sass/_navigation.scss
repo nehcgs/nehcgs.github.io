@@ -82,7 +82,7 @@
       font-weight: bold;
       line-height: 1.5;
       text-align: center;
-      text-decoration: none;
+      text-decoration: none !important; 
       color: mix(#fff, $gray, 25%);
       border: 1px solid $light-gray;
       border-radius: 0;
@@ -130,7 +130,7 @@
     font-size: $type-size-5;
     font-weight: bold;
     text-align: center;
-    text-decoration: none;
+    text-decoration: none !important; 
     color: mix(#fff, $gray, 50%);
     border: 1px solid $light-gray;
     border-radius: $border-radius;
@@ -182,7 +182,7 @@
     margin: 0 1rem;
     padding: 0.5rem 0;
     color: $masthead-link-color;
-    text-decoration: none;
+    text-decoration: none !important; 
 
     &:hover {
       color: $masthead-link-color-hover;
@@ -309,7 +309,7 @@
 }
 
 a:any-link {
-  text-decoration: none;
+  text-decoration: none !important; 
   cursor: auto;
 }
 
@@ -330,7 +330,7 @@ a:any-link {
     color: inherit;
 
     &:hover {
-      text-decoration: none;
+      text-decoration: none !important; 
     }
   }
 
