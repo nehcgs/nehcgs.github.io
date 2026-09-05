@@ -1,0 +1,498 @@
+:root {
+    --background: #fdfefe;
+    --surface: #ffffff;
+    --ink: #242a2d;
+    --muted: #657075;
+    --line: #e0e5e7;
+    --accent: #8a4638;
+    --accent-dark: #5f2e27;
+    --sans: "Source Sans 3", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    --serif: "Source Serif 4", Georgia, serif;
+    --content-width: 900px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background: var(--background);
+    color: var(--ink);
+    font-family: var(--sans);
+    font-size: 15.5px;
+    line-height: 1.62;
+    -webkit-font-smoothing: antialiased;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    color: var(--accent);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--accent-dark);
+}
+
+a:focus-visible {
+    border-radius: 2px;
+    outline: 3px solid rgba(138, 70, 56, 0.24);
+    outline-offset: 3px;
+}
+
+.skip-link {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 100;
+    padding: 7px 12px;
+    background: var(--ink);
+    color: #fff;
+    transform: translateY(-160%);
+}
+
+.skip-link:focus {
+    color: #fff;
+    transform: translateY(0);
+}
+
+.site-header,
+main,
+footer {
+    width: min(calc(100% - 40px), var(--content-width));
+    margin-inline: auto;
+}
+
+.site-header {
+    padding-top: 24px;
+}
+
+.site-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 18px;
+    /* border-bottom: 2px solid var(--line); */
+    border-bottom: 0px solid var(--line);
+}
+
+.wordmark {
+    color: var(--ink);
+    font-family: var(--serif);
+    font-size: 1rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.site-nav nav {
+    display: flex;
+    gap: 25px;
+}
+
+.site-nav nav a {
+    color: var(--ink);
+    font-size: 0.74rem;
+    font-weight: 400;
+    letter-spacing: 0.045em;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.site-nav nav a:hover {
+    color: var(--accent);
+}
+
+.hero {
+    display: grid;
+    max-width: 720px;
+    margin-inline: auto;
+    grid-template-columns: 160px minmax(0, 1fr);
+    gap: 46px;
+    align-items: center;
+    padding-block: 37px 40px;
+}
+
+.portrait-wrap {
+    width: 160px;
+    height: 160px;
+    margin: 0;
+    overflow: hidden;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+}
+
+.portrait {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.eyebrow,
+.venue {
+    margin: 0;
+    color: var(--accent);
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.075em;
+    text-transform: uppercase;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+    margin-top: 0;
+}
+
+h1,
+h2 {
+    font-family: var(--serif);
+}
+
+h1 {
+    margin: 7px 0 13px;
+    font-size: clamp(2.35rem, 5vw, 3.05rem);
+    font-weight: 600;
+    letter-spacing: -0.025em;
+    line-height: 1.08;
+}
+
+.hero-statement {
+    max-width: 650px;
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.hero-statement strong {
+    color: var(--accent);
+    font-weight: 700;
+}
+
+.hero-supporting {
+    max-width: 660px;
+    margin-bottom: 20px;
+    color: var(--muted);
+    font-size: 0.93rem;
+}
+
+.profile-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+.profile-links a {
+    font-size: calc(0.82rem + 1px);
+    font-weight: 700;
+}
+
+.section {
+    padding-block: 52px;
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+}
+
+.section[aria-label="Biography"] {
+    padding-top: 0;
+    border-top: 0;
+}
+
+#updates,
+#publications {
+    border-top: 1px solid var(--line);
+}
+
+.section-heading {
+    margin-bottom: 28px;
+}
+
+.section-heading h2 {
+    margin: 0;
+    font-size: calc(1.75rem + 1px);
+    font-weight: 600;
+    letter-spacing: -0.015em;
+    line-height: 1.2;
+}
+
+.research-copy {
+    max-width: 720px;
+    margin-inline: auto;
+}
+
+.research-copy p {
+    margin-bottom: 0;
+    font-size: calc(1rem + 1px);
+}
+
+.publications-heading {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 22px;
+}
+
+.text-link,
+.publication-links a {
+    color: var(--accent);
+    font-size: calc(0.72rem + 1px);
+    font-weight: 700;
+    letter-spacing: 0.035em;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.scholar-link {
+    text-align: right;
+}
+
+.publication-years {
+    border-top: 1px solid var(--line);
+}
+
+.publication-year {
+    display: grid;
+    grid-template-columns: 66px minmax(0, 1fr);
+    gap: 24px;
+    border-bottom: 1px solid var(--line);
+}
+
+.publication-year:last-child {
+    border-bottom: 0;
+}
+
+.publication-year > h3 {
+    margin: 20px 0;
+    color: var(--accent);
+    font-size: calc(0.88rem + 1px);
+    font-weight: 750;
+    letter-spacing: 0.035em;
+}
+
+.publication-item {
+    padding-block: 20px;
+    border-bottom: 1px solid var(--line);
+}
+
+.publication-item:last-child {
+    border-bottom: 0;
+}
+
+.publication-item .venue {
+    margin-bottom: 5px;
+    color: var(--muted);
+    font-size: calc(0.65rem + 1px);
+}
+
+.publication-item h4 {
+    max-width: 760px;
+    margin-bottom: 5px;
+    font-family: var(--serif);
+    font-size: calc(1.08rem + 1px);
+    font-weight: 600;
+    line-height: 1.38;
+}
+
+.authors {
+    margin-bottom: 7px;
+    color: var(--muted);
+    font-size: calc(0.84rem + 1px);
+    line-height: 1.5;
+}
+
+.authors strong {
+    color: var(--ink);
+    font-weight: 700;
+}
+
+.publication-links {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 0;
+}
+
+.update-list {
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid var(--line);
+    list-style: none;
+}
+
+.update-list li {
+    display: grid;
+    grid-template-columns: 82px minmax(0, 1fr);
+    gap: 18px;
+    padding-block: 15px;
+    border-bottom: 1px solid var(--line);
+}
+
+.update-list li:last-child {
+    border-bottom: 0;
+}
+
+.update-list time {
+    color: var(--muted);
+    font-size: calc(0.72rem + 1px);
+    font-weight: 700;
+    letter-spacing: 0.025em;
+    text-transform: uppercase;
+}
+
+.update-list p {
+    margin: 0;
+    font-size: calc(0.9rem + 1px);
+    line-height: 1.5;
+}
+
+.update-list a {
+    font-weight: 600;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-block: 26px 38px;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 0.74rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: var(--muted);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+@media (max-width: 640px) {
+    .site-header,
+    main,
+    footer {
+        width: min(calc(100% - 28px), var(--content-width));
+    }
+
+    .site-nav nav {
+        gap: 13px;
+    }
+
+    .site-nav nav a {
+        font-size: 0.64rem;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding-block: 27px 34px;
+    }
+
+    .portrait-wrap {
+        width: 96px;
+        height: 96px;
+    }
+
+    h1 {
+        font-size: 2.15rem;
+    }
+
+    .eyebrow {
+        font-size: 0.62rem;
+        line-height: 1.4;
+    }
+
+    .hero-statement {
+        font-size: 1rem;
+    }
+
+    .hero-supporting {
+        font-size: 0.88rem;
+    }
+
+    .profile-links {
+        gap: 13px;
+    }
+
+    .section {
+        padding-block: 42px;
+    }
+
+    .section-heading {
+        margin-bottom: 20px;
+    }
+
+    .section-heading h2 {
+        font-size: calc(1.55rem + 1px);
+    }
+
+    .publications-heading {
+        display: block;
+    }
+
+    .scholar-link {
+        display: inline-block;
+        margin-top: 10px;
+        text-align: left;
+    }
+
+    .publication-year {
+        grid-template-columns: 46px minmax(0, 1fr);
+        gap: 12px;
+    }
+
+    .publication-item h4 {
+        font-size: calc(1rem + 1px);
+    }
+
+    .update-list li {
+        grid-template-columns: 72px minmax(0, 1fr);
+        gap: 12px;
+    }
+
+    footer {
+        align-items: flex-start;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 430px) {
+    .wordmark {
+        display: none;
+    }
+
+    .site-nav {
+        justify-content: flex-end;
+    }
+
+    .portrait-wrap {
+        width: 84px;
+        height: 84px;
+    }
+
+    h1 {
+        font-size: 1.9rem;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+}
