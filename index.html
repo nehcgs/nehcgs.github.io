@@ -2,6 +2,15 @@
 <html lang="en">
 
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8BCP6G54B0"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-8BCP6G54B0');
+    </script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Shuguang Chen is an AI researcher broadly interested in Agentic AI and NLP.">
@@ -49,17 +58,17 @@
 
     <header class="site-header">
         <div class="site-nav">
-            <a class="wordmark" href="#top">Shuguang Chen</a>
+            <a class="wordmark" href="#about">Shuguang Chen</a>
             <nav aria-label="Primary navigation">
-                <a href="#research">Research</a>
-                <a href="#updates">Updates</a>
+                <a href="#about">About</a>
+                <a href="#news">News</a>
                 <a href="#publications">Publications</a>
             </nav>
         </div>
     </header>
 
     <main id="main-content">
-        <section class="hero" id="top" aria-labelledby="page-title">
+        <section class="hero" id="about" aria-labelledby="page-title">
             <figure class="portrait-wrap">
                 <img class="portrait" src="images/profile.png" alt="Portrait of Shuguang Chen" width="596" height="596">
             </figure>
@@ -97,9 +106,9 @@
             </div>
         </div>
 
-        <section class="section updates" id="updates" aria-labelledby="updates-title">
+        <section class="section news" id="news" aria-labelledby="news-title">
             <div class="section-heading">
-                <h2 id="updates-title">Recent News</h2>
+                <h2 id="news-title">Recent News</h2>
             </div>
             <ol class="update-list">
                 <li>
@@ -244,7 +253,7 @@
 
     <footer>
         <p>Shuguang Chen · Researcher in NLP and Agentic AI</p>
-        <a href="#top">Back to top <span aria-hidden="true">↑</span></a>
+        <a href="#about">Back to top <span aria-hidden="true">↑</span></a>
     </footer>
 </body>
 

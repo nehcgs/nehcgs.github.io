@@ -103,7 +103,7 @@ footer {
 
 .site-nav nav a {
     color: var(--ink);
-    font-size: 0.74rem;
+    font-size: 0.82rem;
     font-weight: 400;
     letter-spacing: 0.045em;
     text-decoration: none;
@@ -213,7 +213,7 @@ h1 {
     border-top: 0;
 }
 
-#updates,
+#news,
 #publications {
     border-top: 1px solid var(--line);
 }
@@ -395,7 +395,7 @@ footer a {
     }
 
     .site-nav nav a {
-        font-size: 0.64rem;
+        font-size: 0.72rem;
     }
 
     .hero {
